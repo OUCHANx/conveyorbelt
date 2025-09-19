@@ -20,7 +20,7 @@ public class SystemController : MonoBehaviour
     }
     private void Start()
     {
-        Debug.Log("test");
+        Debug.Log("githubに公開してみる");
         // これはベルトコンベアの速さ
         conveyorUpgradeButton.onClick.AddListener(() =>
         {
@@ -113,7 +113,6 @@ public class SystemController : MonoBehaviour
     //     }
     //     zukanImage.color = c;
     // }
-    
 
 
 }
