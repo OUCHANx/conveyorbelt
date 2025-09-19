@@ -1,0 +1,591 @@
+fileFormatVersion: 2
+guid: 9694c85acad5241209964263683cabf1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7344132164130955023
+    second: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+      (6) 2_0"
+  - first:
+      213: 635225275296850530
+    second: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+      (6) 2_1"
+  - first:
+      213: -4604985782334823548
+    second: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+      (6) 2_2"
+  - first:
+      213: 4014874433583848131
+    second: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+      (6) 2_3"
+  - first:
+      213: 6601392798280938043
+    second: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+      (6) 2_4"
+  - first:
+      213: 1690587665585220410
+    second: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+      (6) 2_5"
+  - first:
+      213: -8513519269517467417
+    second: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+      (6) 2_6"
+  - first:
+      213: 1226574094093264242
+    second: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+      (6) 2_7"
+  - first:
+      213: 1430481160111980297
+    second: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+      (6) 2_8"
+  - first:
+      213: -6166952277571663863
+    second: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+      (6) 2_9"
+  - first:
+      213: -4792938448464226597
+    second: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+      (6) 2_10"
+  - first:
+      213: -5587565770667882856
+    second: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+      (6) 2_11"
+  - first:
+      213: 1113937754788262448
+    second: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+      (6) 2_12"
+  - first:
+      213: 3777702260091231368
+    second: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+      (6) 2_13"
+  - first:
+      213: 4363131060964276098
+    second: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+      (6) 2_14"
+  - first:
+      213: -3552185333650239024
+    second: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+      (6) 2_15"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+        (6) 2_0"
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1845
+        width: 11
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0247525b6641a90800000000000000
+      internalID: -7344132164130955023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+        (6) 2_1"
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 1845
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2622b66b506c0d800800000000000000
+      internalID: 635225275296850530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+        (6) 2_2"
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 1846
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 483653844ddc710c0800000000000000
+      internalID: -4604985782334823548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+        (6) 2_3"
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 1845
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca109f8603b7b730800000000000000
+      internalID: 4014874433583848131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+        (6) 2_4"
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1846
+        width: 9
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b327b5c36cbdc9b50800000000000000
+      internalID: 6601392798280938043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+        (6) 2_5"
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 1846
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b2dd4568c267710800000000000000
+      internalID: 1690587665585220410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+        (6) 2_6"
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1790
+        width: 345
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e0e7f7b457e9d980800000000000000
+      internalID: -8513519269517467417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+        (6) 2_7"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1080
+        height: 1920
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2752021d3aaa50110800000000000000
+      internalID: 1226574094093264242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+        (6) 2_8"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1080
+        height: 1920
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90ffc5e39071ad310800000000000000
+      internalID: 1430481160111980297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+        (6) 2_9"
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 441
+        width: 319
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9080e84d3959a6aa0800000000000000
+      internalID: -6166952277571663863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+        (6) 2_10"
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 436
+        width: 331
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd65afc00ef0c7db0800000000000000
+      internalID: -4792938448464226597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+        (6) 2_11"
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 436
+        width: 331
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8968538298af472b0800000000000000
+      internalID: -5587565770667882856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+        (6) 2_12"
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 294
+        width: 319
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 032fc007c70857f00800000000000000
+      internalID: 1113937754788262448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+        (6) 2_13"
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 289
+        width: 331
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c9defb0381d6430800000000000000
+      internalID: 3777702260091231368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+        (6) 2_14"
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 289
+        width: 331
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 287bf354594fc8c30800000000000000
+      internalID: 4363131060964276098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
+        (6) 2_15"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1080
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d1dc63624a14bec0800000000000000
+      internalID: -3552185333650239024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c85448771e99c4ae9be995d13dd7f331
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC (6) 2_0": -7344132164130955023
+      "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC (6) 2_1": 635225275296850530
+      "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC (6) 2_10": -4792938448464226597
+      "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC (6) 2_11": -5587565770667882856
+      "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC (6) 2_12": 1113937754788262448
+      "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC (6) 2_13": 3777702260091231368
+      "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC (6) 2_14": 4363131060964276098
+      "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC (6) 2_15": -3552185333650239024
+      "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC (6) 2_2": -4604985782334823548
+      "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC (6) 2_3": 4014874433583848131
+      "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC (6) 2_4": 6601392798280938043
+      "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC (6) 2_5": 1690587665585220410
+      "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC (6) 2_6": -8513519269517467417
+      "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC (6) 2_7": 1226574094093264242
+      "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC (6) 2_8": 1430481160111980297
+      "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC (6) 2_9": -6166952277571663863
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

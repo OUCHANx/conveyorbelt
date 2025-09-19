@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e9d394644ca34d00863f01810f87bf8, type: 3}
+  m_Name: PanData
+  m_EditorClassIdentifier: 
+  pans:
+  - name: "\u3075\u3064\u3046\u306E\u30D1\u30F3"
+    normalPrefab: {fileID: 0}
+    blackPrefab: {fileID: 0}
+    pinkPrefab: {fileID: 0}
+    price: 0
+    hp: 1
+    exp: 1
+  - name: "\u304F\u308D\u3044\u30D1\u30F3"
+    normalPrefab: {fileID: 0}
+    blackPrefab: {fileID: 0}
+    pinkPrefab: {fileID: 0}
+    price: 0
+    hp: 2
+    exp: 10
+  - name: "\u30D4\u30F3\u30AF\u306E\u30D1\u30F3"
+    normalPrefab: {fileID: 0}
+    blackPrefab: {fileID: 0}
+    pinkPrefab: {fileID: 0}
+    price: 0
+    hp: 5
+    exp: 100
