@@ -76,8 +76,3 @@ crashlytics-build.properties
 
 # macOS system files
 .DS_Store
-
-# TextMesh Pro auto-generated font assets (大容量なので除外)
-Assets/TextMesh Pro/Resources/Fonts & Materials/*.asset
-Assets/TextMesh Pro/Resources/Fonts & Materials/*.png
-
