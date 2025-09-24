@@ -139,9 +139,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panInfo:
     name: 
-    prefab: {fileID: 7241313956235270121}
     price: 10
-    having: 1
+    havingHutuu: 1
+    havingBlack: 0
+    havingPink: 0
 --- !u!61 &-5704405898216744613
 BoxCollider2D:
   m_ObjectHideFlags: 0

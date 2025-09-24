@@ -140,9 +140,9 @@ MonoBehaviour:
   panInfo:
     name: 
     price: 50
-    hp: 0
-    exp: 0
-    having: 1
+    havingHutuu: 0
+    havingBlack: 1
+    havingPink: 0
 --- !u!61 &4365798151617384819
 BoxCollider2D:
   m_ObjectHideFlags: 0
