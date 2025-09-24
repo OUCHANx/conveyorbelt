@@ -1,13 +1,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
-using UnityEngine.UI;  // DOTweenを使うのに必要
+using UnityEngine.UI;
 
 public class StartButton : MonoBehaviour
 {
     [SerializeField] public AudioSource bgmSource;//main camera
     [SerializeField] private AudioClip clipon;
     [SerializeField] private Button startButton;
+    [SerializeField] private SimpleFadeOut transition;
+
 
     void Start()
     {
@@ -17,21 +19,16 @@ public class StartButton : MonoBehaviour
                 bgmSource.PlayOneShot(clipon);
             });
     }
-    public void OnStartButtonClicked()
-    {
-        // ボタンを一瞬小さくしてから元に戻す
-        transform.DOScale(.7f, .1f)   // 0.9倍に0.2秒かけて縮小
-            .SetEase(Ease.OutQuad)
-            .OnComplete(() =>
-            {
-                transform.DOScale(1f, .2f).SetEase(Ease.OutBounce);
-            });
 
-        // 1秒後にシーン遷移
-        DOVirtual.DelayedCall(1f, () =>
-        {
-            SceneManager.LoadScene("SampleScene");
-        });
-    }
+public void OnStartButtonClicked()
+{
+    // ボタンアニメーション
+    transform.DOScale(.5f, .1f).SetEase(Ease.OutQuad)
+        .OnComplete(() => transform.DOScale(1f, .2f).SetEase(Ease.OutBounce));
+
+    // フェードアウトで遷移
+    transition.FadeAndLoad("SampleScene", 0.7f);
+}
+
 
 }
