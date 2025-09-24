@@ -1,9 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
-//Hello Unity 9/19
-using Unity;
-
 
 public class SimpleLineMover : MonoBehaviour
 {

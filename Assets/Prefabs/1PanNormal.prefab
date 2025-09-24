@@ -139,9 +139,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panInfo:
     name: 
+    prefab: {fileID: 7241313956235270121}
     price: 10
-    hp: 0
-    exp: 0
     having: 1
 --- !u!61 &-5704405898216744613
 BoxCollider2D:

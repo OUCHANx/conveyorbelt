@@ -7,7 +7,10 @@ public class SystemController : MonoBehaviour
     public static SystemController Instance; // シングルトンでどこからでも呼べるように
 
     [SerializeField] private TextMeshProUGUI coinText;
-    [SerializeField] private SpriteRenderer zukanImage; // InspectorでzukanpanelのImageをセット
+    [SerializeField] private SpriteRenderer zukanHutuuImage;
+    [SerializeField] private SpriteRenderer zukanBlackImage;
+    [SerializeField] private SpriteRenderer zukanPinkImage;
+
     [SerializeField] private PanData.PanInfo panInfo; // Inspectorで割り
     [SerializeField] private Button conveyorUpgradeButton;
     [SerializeField] private Button durationUpgradeButton;
@@ -20,7 +23,6 @@ public class SystemController : MonoBehaviour
     }
     private void Start()
     {
-        Debug.Log("githubに公開してみる");
         // これはベルトコンベアの速さ
         conveyorUpgradeButton.onClick.AddListener(() =>
         {
@@ -42,77 +44,95 @@ public class SystemController : MonoBehaviour
 
     private void Update()
     {
-        //UpdateImage();
-        if (panInfo.having >= 1)
-        {
-            Color c = zukanImage.color;
-            if (panInfo.having == 0)
-            {
-                // 半透明にする
-                c.a = 0.3f;
-            }
-            else if (panInfo.having >= 1)
-            {
-                // 通常（不透明）に戻す
-                c.a = 1f;
-            }
-            zukanImage.color = c;
-        }
-        else
-        {
-            Color c = zukanImage.color;
-            c.a = 0.3f;
-            zukanImage.color = c;
-        }
-
-
-
+        UpdateHutuuImage();
+        UpdateBlackImage();
+        UpdatePinkImage();
     }
 
     public void AddCoins(int amount)
     {
         panInfo.price += amount;
         if (coinText != null)
-            coinText.text = panInfo.price.ToString();
+            coinText.text = panInfo.price.ToString() + "円";
     }
     public void SubtractCoins(int xamount)
     {
         panInfo.price -= xamount;
         spawner.DecreasedurationX(0.05f);
         if (coinText != null)
-            coinText.text = panInfo.price.ToString();
+            coinText.text = panInfo.price.ToString() + "円";
     }
     public void SubstractCoins1(int xamount)
     {
         panInfo.price -= xamount;
         spawner.IncreaseX(1);
         if (coinText != null)
-            coinText.text = panInfo.price.ToString();
+            coinText.text = panInfo.price.ToString() + "円";
     }
 
-    public void Addhaving(int amount)
+    public void AddHutuuhaving(int amountHutuu)
     {
-        panInfo.having += amount;
+        panInfo.havingHutuu += amountHutuu;
+    }
+    public void AddBlackhaving(int amountBlack)
+    {
+        panInfo.havingBlack += amountBlack;
+    }
+    public void AddPinkhaving(int amountPink)
+    {
+        panInfo.havingPink += amountPink;
     }
 
 
-    // private void UpdateImage()
-    // {
-    //     if (zukanImage == null) return;
 
-    //     Color c = zukanImage.color;
-    //     if (panInfo.having == 0)
-    //     {
-    //         // 半透明にする
-    //         c.a = 0.3f;
-    //     }
-    //     else if (panInfo.having >= 1)
-    //     {
-    //         // 通常（不透明）に戻す
-    //         c.a = 1f;
-    //     }
-    //     zukanImage.color = c;
-    // }
+    private void UpdateHutuuImage()
+    {
+        Color h = zukanHutuuImage.color;
+        if (panInfo.havingHutuu == 0)
+        {
+            // 半透明にする
+            h.a = 0.3f;
+        }
+        else if (panInfo.havingHutuu >= 1)
+        {
+            // 通常（不透明）に戻す
+            h.a = 1f;
+        }
+        zukanHutuuImage.color = h;
+    }
 
+    private void UpdateBlackImage()
+    {
+        Color b = zukanBlackImage.color;
+        if (panInfo.havingBlack == 0)
+        {
+            // 半透明にする
+            b.a = 0.3f;
+        }
+        else if (panInfo.havingBlack >= 1)
+        {
+            // 通常（不透明）に戻す
+            b.a = 1f;
+        }
+        zukanBlackImage.color = b;
+    }
 
+    private void UpdatePinkImage()
+    {
+        Color p = zukanPinkImage.color;
+        if (panInfo.havingPink == 0)
+        {
+            // 半透明にする
+            p.a = 0.3f;
+        }
+        else if (panInfo.havingPink >= 1)
+        {
+            // 通常（不透明）に戻す
+            p.a = 1f;
+        }
+        zukanPinkImage.color = p;
+    }
 }
+
+
+
