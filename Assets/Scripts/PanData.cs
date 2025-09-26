@@ -9,9 +9,8 @@ public class PanData : ScriptableObject
     [System.Serializable]
     public class PanInfo
     {
-        public string name;         // 名前
-        //public GameObject prefab;   // プレハブ
-        public int price;           // 値段
+        public string name;
+        public int price;
         public int havingHutuu;
         public int havingBlack;
         public int havingPink;
