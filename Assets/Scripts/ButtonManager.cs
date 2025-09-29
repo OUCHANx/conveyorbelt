@@ -12,6 +12,11 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] private GameObject upgradeContentspanel;
     [SerializeField] private GameObject line;
 
+    // [SerializeField] private
+    // [SerializeField]
+    // [SerializeField]
+    // //図鑑にあるパンが押されるとそのパンの詳細が表示されるようにしたい。
+
 
     void Start()
     {
