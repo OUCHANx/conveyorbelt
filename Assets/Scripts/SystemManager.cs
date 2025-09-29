@@ -7,9 +7,9 @@ public class SystemController : MonoBehaviour
     public static SystemController Instance; // シングルトンでどこからでも呼べるように
 
     [SerializeField] private TextMeshProUGUI coinText;
-    [SerializeField] private SpriteRenderer zukanHutuuImage;
-    [SerializeField] private SpriteRenderer zukanBlackImage;
-    [SerializeField] private SpriteRenderer zukanPinkImage;
+    [SerializeField] private Image zukanHutuuImage;
+    [SerializeField] private Image zukanBlackImage;
+    [SerializeField] private Image zukanPinkImage;
 
     [SerializeField] private PanData.PanInfo panInfo; // Inspectorで割り
     [SerializeField] private Button conveyorUpgradeButton;
