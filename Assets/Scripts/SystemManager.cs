@@ -1,6 +1,6 @@
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;   // TextMeshPro を使う場合
+using UnityEngine.UI;
 
 public class SystemController : MonoBehaviour
 {
@@ -11,7 +11,7 @@ public class SystemController : MonoBehaviour
     [SerializeField] private Image zukanBlackImage;
     [SerializeField] private Image zukanPinkImage;
 
-    [SerializeField] private PanData.PanInfo panInfo; // Inspectorで割り
+    [SerializeField] private PanData.PanInfo panInfo;
     [SerializeField] private Button conveyorUpgradeButton;
     [SerializeField] private Button durationUpgradeButton;
     [SerializeField] private PanSpawner spawner;
@@ -133,6 +133,3 @@ public class SystemController : MonoBehaviour
         zukanPinkImage.color = p;
     }
 }
-
-
-
