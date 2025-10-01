@@ -16,6 +16,8 @@ public class GachaUI : MonoBehaviour
         resultIcon.sprite = item.itemImage;
         resultIcon.preserveAspect = true;
 
-        if (resultName) resultName.text = $"{item.itemName} (R{item.rarity})";
+        if (resultName) resultName.text = $"{item.itemName}";
+        //if (resultName) resultName.text = $"{item.itemName} (R{item.rarity})";
+
     }
 }
