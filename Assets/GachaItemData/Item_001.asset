@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Item_001
   m_EditorClassIdentifier: 
   itemName: 1
-  itemImage: {fileID: 0}
+  itemImage: {fileID: 3166047526315058956, guid: 4590a47189d914621b59e3ca10e8d881, type: 3}
   itemFrame: {fileID: 0}
-  rarity: 0
