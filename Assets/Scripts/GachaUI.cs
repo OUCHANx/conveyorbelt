@@ -13,7 +13,7 @@ public class GachaUI : MonoBehaviour
     {
         var item = gacha.Draw();
         if (item == null) return;
-        frame.color = Color.black;
+        //frame.color = Color.black;
         resultIcon.sprite = item.itemImage;
         resultIcon.preserveAspect = true;
 
