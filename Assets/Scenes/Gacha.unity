@@ -483,8 +483,7 @@ GameObject:
   - component: {fileID: 373505145}
   - component: {fileID: 373505144}
   m_Layer: 0
-  m_Name: "\u30D8\u3099\u30FC\u30B7\u3099\u30E5\u3000\u767D\u3000\u30CA\u30C1\u30E5\u30E9\u30EB\u3000\u30B7\u30F3\u30D5\u309A\u30EB\u3000\u6328\u62F6\u3000Instagram\u30B9\u30C8\u30FC\u30EA\u30FC
-    (6) 8_0"
+  m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -503,15 +502,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3166047526315058956, guid: 4590a47189d914621b59e3ca10e8d881, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -877,6 +876,7 @@ MonoBehaviour:
   resultIcon: {fileID: 1674996680}
   frame: {fileID: 373505144}
   resultName: {fileID: 210027905}
+  pullButton: {fileID: 1673732932}
 --- !u!4 &1519674323
 Transform:
   m_ObjectHideFlags: 0

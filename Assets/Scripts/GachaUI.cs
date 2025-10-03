@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Cysharp.Threading.Tasks;
+using System;
 
 public class GachaUI : MonoBehaviour
 {
@@ -8,17 +10,37 @@ public class GachaUI : MonoBehaviour
     [SerializeField] private Image resultIcon;
     [SerializeField] private Image frame;
     [SerializeField] private TextMeshProUGUI resultName;
+    [SerializeField] private Button pullButton;
 
-    public void OnPullButton()
+    // OnClickにはこのメソッドを直接割り当ててOK
+    public async void OnPullButton()
     {
+        // 連打防止（任意）
+        if (pullButton) pullButton.interactable = false;
+
+        // 一旦プレースホルダー表示
+        if (resultName) resultName.text = "ガチャ回転中...";
+        if (resultIcon) resultIcon.sprite = null;
+        if (frame) frame.color = Color.gray;
+
+        // ★ ここで2秒待つ！
+        await UniTask.Delay(TimeSpan.FromSeconds(2));
+
+        // 抽選して結果表示
         var item = gacha.Draw();
-        if (item == null) return;
-        //frame.color = Color.black;
-        resultIcon.sprite = item.itemImage;
-        resultIcon.preserveAspect = true;
+        if (item != null)
+        {
+            frame.color = Color.white;
+            resultIcon.sprite = item.itemImage;
+            resultIcon.preserveAspect = true;
+            resultName.text = $"{item.itemName}";
+        }
+        else
+        {
+            if (resultName) resultName.text = "はずれ…";
+        }
 
-        if (resultName) resultName.text = $"{item.itemName}";
-        //if (resultName) resultName.text = $"{item.itemName} (R{item.rarity})";
-
+        // 連打防止解除
+        if (pullButton) pullButton.interactable = true;
     }
 }
