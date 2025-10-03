@@ -4428,7 +4428,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd1b7563a948f43779fa0565c11c311f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items: []
+  items:
+  - {fileID: 11400000, guid: 17cde80c303b64b6c82c4711dffbb65c, type: 2}
+  - {fileID: 11400000, guid: 35da574e7e905416a8c85e5c5dbb4fdf, type: 2}
+  - {fileID: 11400000, guid: 1774a38dc160f41f5ad0325795f99dcf, type: 2}
+  - {fileID: 11400000, guid: 7b63e9a2f28e143e0a84c34c4bea8d59, type: 2}
+  - {fileID: 11400000, guid: bb9b1239188594a0188129215e8490aa, type: 2}
+  - {fileID: 11400000, guid: 2c4ab0cfe21b24568844090f8d49481f, type: 2}
+  - {fileID: 11400000, guid: 6ea4049df9dc0467792e728c39fdc1db, type: 2}
+  - {fileID: 11400000, guid: 256822e2d9caa45dbbf604a938b828bf, type: 2}
+  - {fileID: 11400000, guid: 147de975706244e389d3f275cb700a98, type: 2}
+  - {fileID: 11400000, guid: e5711a19c62014e2093886a2ce6f5a44, type: 2}
 --- !u!4 &1537852645
 Transform:
   m_ObjectHideFlags: 0
@@ -5023,7 +5033,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1820300148}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1820300148
 MonoBehaviour:
   m_ObjectHideFlags: 0

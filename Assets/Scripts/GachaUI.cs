@@ -15,7 +15,6 @@ public class GachaUI : MonoBehaviour
     // OnClickにはこのメソッドを直接割り当ててOK
     public async void OnPullButton()
     {
-        
 
         // 連打防止（任意）
         if (pullButton) pullButton.interactable = false;
@@ -51,6 +50,4 @@ public class GachaUI : MonoBehaviour
         // 連打防止解除
         if (pullButton) pullButton.interactable = true;
     }
-
-    
 }
