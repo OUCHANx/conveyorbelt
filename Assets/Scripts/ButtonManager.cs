@@ -1,3 +1,4 @@
+using UnityEditor.Search;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -5,11 +6,21 @@ public class ButtonManager : MonoBehaviour
 {
     [SerializeField] private Button zukanButton;
     [SerializeField] private Button upgradeButton;
+    [SerializeField] private Button shukkaButton;
     [SerializeField] private Button bagButton;
+
+
     [SerializeField] private Button zukanxButton;
     [SerializeField] private GameObject zukanpanel;
+
+
     [SerializeField] private Button upgradeContentsxButton;
     [SerializeField] private GameObject upgradeContentspanel;
+
+    [SerializeField] private Button shukkaxButton;
+    [SerializeField] private GameObject shukkapanel;
+
+
     [SerializeField] private GameObject line;
 
     // [SerializeField] private
@@ -24,12 +35,19 @@ public class ButtonManager : MonoBehaviour
             zukanButton.onClick.AddListener(OnZukanButtonClicked);
         if (upgradeButton != null)
             upgradeButton.onClick.AddListener(OnUpgradeButtonClicked);
+        if (shukkaButton != null)
+            shukkaButton.onClick.AddListener(OnshukkaButtonClicked);
         if (bagButton != null)
             bagButton.onClick.AddListener(OnBagButtonClicked);
+
+
+        //----バツボタン押したら
         if (zukanxButton != null)
             zukanxButton.onClick.AddListener(OnZukanXButtonClicked);//図鑑パネルのxボタン
         if (upgradeContentsxButton != null)
             upgradeContentsxButton.onClick.AddListener(OnUpgradeContentsXButtonClicked);//アップグレードパネルのxボタン
+        if (shukkaxButton != null)
+            shukkaxButton.onClick.AddListener(OnshukkaButtonXClicked);
     }
 
     private void OnZukanButtonClicked()
@@ -51,12 +69,18 @@ public class ButtonManager : MonoBehaviour
         upgradeContentspanel.SetActive(true);
         Debug.Log("アップグレードボタンがクリックされました");
     }
+    private void OnshukkaButtonClicked()
+    {
+        shukkapanel.SetActive(true);
+        Debug.Log("出荷ボタン押された");
+    }
+
 
     private void OnBagButtonClicked()
     {
         Debug.Log("バッグボタンがクリックされました");
     }
-
+//------------------↓↓バツボタン押したら↓↓--------------------//
     private void OnZukanXButtonClicked()
     {
         if (zukanpanel.activeSelf)
@@ -73,6 +97,14 @@ public class ButtonManager : MonoBehaviour
         }
 
         Debug.Log("Xボタンがクリックされました");
+    }
+
+    private void OnshukkaButtonXClicked()
+    {
+        if (shukkapanel.activeSelf)
+        {
+            shukkapanel.SetActive(false);
+        }
     }
 
     // Update is called once per frame

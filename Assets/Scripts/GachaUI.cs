@@ -15,19 +15,20 @@ public class GachaUI : MonoBehaviour
     // OnClickにはこのメソッドを直接割り当ててOK
     public async void OnPullButton()
     {
+        
 
         // 連打防止（任意）
         if (pullButton) pullButton.interactable = false;
 
         // 一旦プレースホルダー表示
-        if (resultName) resultName.text = "ガチャ回転中...";
+        if (resultName) resultName.text = "回転中...";
         if (resultIcon) resultIcon.sprite = null;
-        if (frame)
-        {
-            Color[] colors = { Color.red, Color.blue, Color.green, Color.yellow, Color.magenta };
-            int index = UnityEngine.Random.Range(0, colors.Length);
-            frame.color = colors[index];
-        }
+        // if (frame)
+        // {
+        //     Color[] colors = { Color.red, Color.blue, Color.green, Color.yellow, Color.magenta };
+        //     int index = UnityEngine.Random.Range(0, colors.Length);
+        //     frame.color = colors[index];
+        // }
 
 
         // ★ ここで2秒待つ！
@@ -50,4 +51,6 @@ public class GachaUI : MonoBehaviour
         // 連打防止解除
         if (pullButton) pullButton.interactable = true;
     }
+
+    
 }
