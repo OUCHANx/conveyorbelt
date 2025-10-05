@@ -84,7 +84,7 @@ public class SystemController : MonoBehaviour
     }
 
 
-
+//--------図鑑機能
     private void UpdateHutuuImage()
     {
         Color h = zukanHutuuImage.color;
