@@ -18,7 +18,7 @@ public class PanSpawner : MonoBehaviour
     [SerializeField, Range(0, 100)] public int pinkPercent = 5;
 
     [SerializeField] private SimpleLineMover mover;  // ← SimpleLineMoverを参照しておく
-    [SerializeField] private TextMeshProUGUI coinText;
+    //[SerializeField] private TextMeshProUGUI coinText;
     private Coroutine spawnRoutine;
 
 

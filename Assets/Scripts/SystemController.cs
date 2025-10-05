@@ -11,7 +11,7 @@ public class SystemController : MonoBehaviour
     [SerializeField] private Image zukanBlackImage;
     [SerializeField] private Image zukanPinkImage;
 
-    [SerializeField] private PanData.PanInfo panInfo;
+    [SerializeField] public PanData.PanInfo panInfo;
     [SerializeField] private Button conveyorUpgradeButton;
     [SerializeField] private Button durationUpgradeButton;
     [SerializeField] private PanSpawner spawner;
@@ -54,6 +54,7 @@ public class SystemController : MonoBehaviour
         panInfo.price += amount;
         if (coinText != null)
             coinText.text = panInfo.price.ToString() + "円";
+
     }
     public void SubtractCoins(int xamount)
     {

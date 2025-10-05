@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using Cysharp.Threading.Tasks;
 using System;
+using Unity.VisualScripting;
 
 public class GachaUI : MonoBehaviour
 {
@@ -11,17 +12,20 @@ public class GachaUI : MonoBehaviour
     [SerializeField] private Image frame;
     [SerializeField] private TextMeshProUGUI resultName;
     [SerializeField] private Button pullButton;
-        [SerializeField] private PanData.PanInfo panInfo;
+    //[SerializeField] private PanData.PanInfo panInfo;
 
 
     // OnClickにはこのメソッドを直接割り当ててOK
     public async void OnPullButton()
     {
-
-        if (panInfo.price >= 500)
-        {
+        if (SystemController.Instance.panInfo.price < 500)
+    {
+        if (resultName) resultName.text = "コインが足りません！";
+        Debug.Log("コインが足りません");
+        return;
+    }
             // 連打防止（任意）
-            if (pullButton) pullButton.interactable = false;
+        if (pullButton) pullButton.interactable = false;
 
             // 一旦プレースホルダー表示
             if (resultName) resultName.text = "回転中...";
@@ -53,6 +57,5 @@ public class GachaUI : MonoBehaviour
 
             // 連打防止解除
             if (pullButton) pullButton.interactable = true;
-        }
     }
 }
