@@ -3506,9 +3506,9 @@ MonoBehaviour:
   panPinkPrefab: {fileID: 755002424397726286, guid: 5ab891337260b48a98dcf470d85d00a5, type: 3}
   x: 2
   interval: 1
-  normalPercent: 80
-  blackPercent: 15
-  pinkPercent: 5
+  normalPercent: 5
+  blackPercent: 5
+  pinkPercent: 90
   mover: {fileID: 1076122853}
 --- !u!4 &1191755661
 Transform:
