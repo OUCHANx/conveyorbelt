@@ -16,7 +16,7 @@ public class SystemController : MonoBehaviour
     [SerializeField] private Button durationUpgradeButton;
     [SerializeField] private PanSpawner spawner;
     [SerializeField] private int xamount = 100;
-    //private int coins = 0;
+    private int coins = 0;//所持金
     void Awake()
     {
         Instance = this;
@@ -52,9 +52,17 @@ public class SystemController : MonoBehaviour
     public void AddCoins(int amount)
     {
         panInfo.price += amount;
+        coins = panInfo.price;
         if (coinText != null)
-            coinText.text = panInfo.price.ToString() + "円";
-
+            coinText.text = coins.ToString() + "円";
+    }
+    public void GachaSubstractCoins(int substractcoins)
+    {
+        coins -= substractcoins;
+        if (coinText != null)
+        {
+            coinText.text = coins.ToString() + "円";
+        }
     }
     public void SubtractCoins(int xamount)
     {
