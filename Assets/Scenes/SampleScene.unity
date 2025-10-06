@@ -3510,7 +3510,6 @@ MonoBehaviour:
   blackPercent: 15
   pinkPercent: 5
   mover: {fileID: 1076122853}
-  coinText: {fileID: 1746045329}
 --- !u!4 &1191755661
 Transform:
   m_ObjectHideFlags: 0
@@ -3718,7 +3717,7 @@ GameObject:
   - component: {fileID: 1289957211}
   - component: {fileID: 1289957212}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: SystemController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
