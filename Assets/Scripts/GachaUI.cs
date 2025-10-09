@@ -17,7 +17,7 @@ public class GachaUI : MonoBehaviour
     // OnClickにはこのメソッドを直接割り当ててOK
     public async void OnPullButton()
     {
-        if (SystemController.Instance.panInfo.price < 500)
+        if (SystemController.Instance.coins < 500)
         {
             if (resultName) resultName.text = "コインが足りません！";
             Debug.Log("コインが足りません");
@@ -60,6 +60,6 @@ public class GachaUI : MonoBehaviour
         if (pullButton) pullButton.interactable = true;
 
         //バグ　ガチャを引いた時にコインの表示がおかしい
-        
+
     }
 }
