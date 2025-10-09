@@ -58,5 +58,8 @@ public class GachaUI : MonoBehaviour
 
         // 連打防止解除
         if (pullButton) pullButton.interactable = true;
+
+        //バグ　ガチャを引いた時にコインの表示がおかしい
+        
     }
 }
