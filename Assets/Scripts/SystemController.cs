@@ -26,7 +26,7 @@ public class SystemController : MonoBehaviour
         // これはベルトコンベアの速さ
         conveyorUpgradeButton.onClick.AddListener(() =>
         {
-            if (panInfo.price >= 100)
+            if (coins >= 100)
             {
                 SubstractCoins1(xamount);
             }
@@ -35,7 +35,7 @@ public class SystemController : MonoBehaviour
         //これは生成間隔
         durationUpgradeButton.onClick.AddListener(() =>
         {
-            if (panInfo.price >= 100)
+            if (coins >= 100)
             {
                 SubtractCoins(xamount);
             }
@@ -66,17 +66,17 @@ public class SystemController : MonoBehaviour
     }
     public void SubtractCoins(int xamount)
     {
-        panInfo.price -= xamount;
+        coins -= xamount;
         spawner.DecreasedurationX(0.05f);
         if (coinText != null)
-            coinText.text = panInfo.price.ToString() + "円";
+            coinText.text = coins.ToString() + "円";
     }
     public void SubstractCoins1(int xamount)
     {
-        panInfo.price -= xamount;
+        coins -= xamount;
         spawner.IncreaseX(1);
         if (coinText != null)
-            coinText.text = panInfo.price.ToString() + "円";
+            coinText.text = coins.ToString() + "円";
     }
 
     public void AddHutuuhaving(int amountHutuu)
