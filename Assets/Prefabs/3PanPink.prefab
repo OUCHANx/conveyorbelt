@@ -110,7 +110,7 @@ MonoBehaviour:
   onEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 755002424397726286}
+      - m_Target: {fileID: -4628224670196945467}
         m_TargetAssemblyTypeName: PanEvents, Assembly-CSharp
         m_MethodName: DestroyPan
         m_Mode: 1

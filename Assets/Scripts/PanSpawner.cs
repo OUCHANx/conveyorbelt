@@ -85,14 +85,12 @@ public class PanSpawner : MonoBehaviour
         // パンを生成
         var go = Instantiate(prefab, pos, Quaternion.identity);
 
-        // moverを付与してベルトに流す
         var lineMover = go.GetComponent<SimpleLineMover>();
         if (lineMover != null)
         {
             lineMover.Setup(path, x);
         }
     }
-
     public void IncreaseX(int increaseDelta)
     {
         x += increaseDelta;
