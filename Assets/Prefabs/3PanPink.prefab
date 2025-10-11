@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7799552695394714269}
   - component: {fileID: -8286343148549347550}
   - component: {fileID: -3248989298118890019}
-  - component: {fileID: -6937339888719629384}
+  - component: {fileID: -4628224670196945467}
   m_Layer: 0
   m_Name: 3PanPink
   m_TagString: PanHutuu
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -110,7 +110,7 @@ MonoBehaviour:
   onEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -6937339888719629384}
+      - m_Target: {fileID: 755002424397726286}
         m_TargetAssemblyTypeName: PanEvents, Assembly-CSharp
         m_MethodName: DestroyPan
         m_Mode: 1
@@ -189,7 +189,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4.5170665, y: 4.5510674}
   m_EdgeRadius: 0
---- !u!114 &-6937339888719629384
+--- !u!114 &-4628224670196945467
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

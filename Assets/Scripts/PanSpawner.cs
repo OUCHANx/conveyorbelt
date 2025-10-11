@@ -96,7 +96,10 @@ public class PanSpawner : MonoBehaviour
     public void IncreaseX(int increaseDelta)
     {
         x += increaseDelta;
-        Debug.Log("レベルアップしました");
+        if(x >= 2)
+        {
+            Debug.Log("レベル２になりました");
+        }
     }
     public void DecreasedurationX(float dicreaseDuration)
     {

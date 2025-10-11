@@ -3764,6 +3764,7 @@ MonoBehaviour:
   durationUpgradeButton: {fileID: 1076515278}
   spawner: {fileID: 1191755660}
   xamount: 100
+  coins: 0
 --- !u!1 &1336905018
 GameObject:
   m_ObjectHideFlags: 0

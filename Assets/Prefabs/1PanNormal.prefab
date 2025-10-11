@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -6214984409464693464}
   - component: {fileID: -1103765751020620143}
   - component: {fileID: -5704405898216744613}
-  - component: {fileID: 454838745257581207}
+  - component: {fileID: -2000023686261762279}
   m_Layer: 0
   m_Name: 1PanNormal
   m_TagString: PanHutuu
@@ -110,7 +110,7 @@ MonoBehaviour:
   onEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 454838745257581207}
+      - m_Target: {fileID: -2000023686261762279}
         m_TargetAssemblyTypeName: PanEvents, Assembly-CSharp
         m_MethodName: DestroyPan
         m_Mode: 1
@@ -189,7 +189,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4.662097, y: 4.6776013}
   m_EdgeRadius: 0
---- !u!114 &454838745257581207
+--- !u!114 &-2000023686261762279
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
