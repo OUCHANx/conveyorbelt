@@ -84,7 +84,7 @@ public class SystemController : MonoBehaviour
             coinText.text = coins.ToString() + "円";
         }
     }
-    //----アップグレード機能　
+    //----アップグレード機能
     //1.生成時間を減少させる
     //2.ベルトコンベアの速さを上げる
 

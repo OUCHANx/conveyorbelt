@@ -1718,7 +1718,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.030225998, y: 0.030225998, z: 0.030225998}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2095298721}
   m_Father: {fileID: 2131535242}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -3760,10 +3761,11 @@ MonoBehaviour:
     havingHutuu: 0
     havingBlack: 0
     havingPink: 0
-  conveyorUpgradeButton: {fileID: 2095298724}
+  speedUpgradeButton: {fileID: 2095298724}
   durationUpgradeButton: {fileID: 1076515278}
   spawner: {fileID: 1191755660}
-  xamount: 100
+  durationUpgradeButtonCoinText: {fileID: 376996462}
+  speedUpgradeButtonCoinText: {fileID: 777663719}
   coins: 0
 --- !u!1 &1336905018
 GameObject:
@@ -6144,15 +6146,15 @@ RectTransform:
   m_GameObject: {fileID: 2095298720}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.030225996, y: 0.030225996, z: 0.030225998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 777663718}
-  m_Father: {fileID: 2131535242}
+  m_Father: {fileID: 536855286}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.9962769, y: 2.096074}
+  m_AnchoredPosition: {x: 158.34967, y: -4.099986}
   m_SizeDelta: {x: 66.95, y: 28.59}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2095298722
@@ -6537,7 +6539,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 536855286}
-  - {fileID: 2095298721}
   - {fileID: 756621382}
   m_Father: {fileID: 950332928}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
