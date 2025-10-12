@@ -37,11 +37,11 @@ public class SystemController : MonoBehaviour
         {
             if (coins >= speedUpgradeCost)
             {
-                SubstractCoins1(speedUpgradeCost);
+                DecreaseCoinsAndIncreaseSpeed(speedUpgradeCost);
                 speedUpgradelevel++;
                 speedUpgradeCost *= 5; // 必要コインを5倍に
                 speedUpgradeButtonCoinText.text = speedUpgradeCost.ToString() + "円";
-                
+                //テキストを用意
                 Debug.Log($"レベル{speedUpgradelevel}になりました。次の必要コイン:{speedUpgradeCost}");
             }
         });
@@ -51,11 +51,11 @@ public class SystemController : MonoBehaviour
         {
             if (coins >= durationUpgradeCost)
             {
-                SubtractCoins(durationUpgradeCost);
+                DecreaseCoinsAndInterval(durationUpgradeCost);
                 durationUpgradeLevel++;
                 durationUpgradeCost *= 5; // 必要コインを5倍に
                 durationUpgradeButtonCoinText.text = durationUpgradeCost.ToString() + "円";
-                
+                //テキストを用意
                 Debug.Log($"レベル{durationUpgradeLevel}になりました。次の必要コイン:{durationUpgradeCost}");
             }
         });
@@ -87,20 +87,6 @@ public class SystemController : MonoBehaviour
     //----アップグレード機能　
     //1.生成時間を減少させる
     //2.ベルトコンベアの速さを上げる
-    private void SubtractCoins(int xamount)
-    {
-        coins -= xamount;
-        spawner.DecreasedurationX(0.05f);
-        if (coinText != null)
-            coinText.text = coins.ToString() + "円";
-    }
-    private void SubstractCoins1(int xamount)
-    {
-        coins -= xamount;
-        spawner.IncreaseX(1);
-        if (coinText != null)
-            coinText.text = coins.ToString() + "円";
-    }
 
     private void DecreaseCoinsAndInterval(int amount)
     {
