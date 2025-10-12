@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEditor.Search;
 
 public class SystemController : MonoBehaviour
 {
@@ -12,11 +13,19 @@ public class SystemController : MonoBehaviour
     [SerializeField] private Image zukanPinkImage;
 
     [SerializeField] public PanData.PanInfo panInfo;
-    [SerializeField] private Button conveyorUpgradeButton;
+    [SerializeField] private Button speedUpgradeButton;
     [SerializeField] private Button durationUpgradeButton;
     [SerializeField] private PanSpawner spawner;
-    [SerializeField] private int xamount = 100;
+    [SerializeField] private TextMeshProUGUI durationUpgradeButtonCoinText;
+    [SerializeField] private TextMeshProUGUI speedUpgradeButtonCoinText;
+    //[SerializeField] private int xamount = 100; //アップグレードに必要なコインの数
     public int coins = 0;//所持金
+    //↓全部初期値
+    private int durationUpgradeLevel = 1;
+    private int durationUpgradeCost = 100;
+    private int speedUpgradelevel = 1;
+    private int speedUpgradeCost = 100;
+
     void Awake()
     {
         Instance = this;
@@ -24,20 +33,30 @@ public class SystemController : MonoBehaviour
     private void Start()
     {
         // これはベルトコンベアの速さ
-        conveyorUpgradeButton.onClick.AddListener(() =>
+        speedUpgradeButton.onClick.AddListener(() =>
         {
-            if (coins >= 100)
+            if (coins >= speedUpgradeCost)
             {
-                SubstractCoins1(xamount);
+                SubstractCoins1(speedUpgradeCost);
+                speedUpgradelevel++;
+                speedUpgradeCost *= 5; // 必要コインを5倍に
+                speedUpgradeButtonCoinText.text = speedUpgradeCost.ToString() + "円";
+                
+                Debug.Log($"レベル{speedUpgradelevel}になりました。次の必要コイン:{speedUpgradeCost}");
             }
         });
 
         //これは生成間隔
         durationUpgradeButton.onClick.AddListener(() =>
         {
-            if (coins >= 100)
+            if (coins >= durationUpgradeCost)
             {
-                SubtractCoins(xamount);
+                SubtractCoins(durationUpgradeCost);
+                durationUpgradeLevel++;
+                durationUpgradeCost *= 5; // 必要コインを5倍に
+                durationUpgradeButtonCoinText.text = durationUpgradeCost.ToString() + "円";
+                
+                Debug.Log($"レベル{durationUpgradeLevel}になりました。次の必要コイン:{durationUpgradeCost}");
             }
         });
     }
@@ -56,6 +75,7 @@ public class SystemController : MonoBehaviour
         if (coinText != null)
             coinText.text = coins.ToString() + "円";
     }
+    //ガチャを引いた時に減少するコインの数
     public void GachaSubstractCoins(int substractcoins)
     {
         coins -= substractcoins;
@@ -64,16 +84,35 @@ public class SystemController : MonoBehaviour
             coinText.text = coins.ToString() + "円";
         }
     }
-    public void SubtractCoins(int xamount)
+    //----アップグレード機能　
+    //1.生成時間を減少させる
+    //2.ベルトコンベアの速さを上げる
+    private void SubtractCoins(int xamount)
     {
         coins -= xamount;
         spawner.DecreasedurationX(0.05f);
         if (coinText != null)
             coinText.text = coins.ToString() + "円";
     }
-    public void SubstractCoins1(int xamount)
+    private void SubstractCoins1(int xamount)
     {
         coins -= xamount;
+        spawner.IncreaseX(1);
+        if (coinText != null)
+            coinText.text = coins.ToString() + "円";
+    }
+
+    private void DecreaseCoinsAndInterval(int amount)
+    {
+        coins -= amount;
+        spawner.DecreasedurationX(0.05f);
+        if (coinText != null)
+            coinText.text = coins.ToString() + "円";
+    }
+
+    private void DecreaseCoinsAndIncreaseSpeed(int amount)
+    {
+        coins -= amount;
         spawner.IncreaseX(1);
         if (coinText != null)
             coinText.text = coins.ToString() + "円";
