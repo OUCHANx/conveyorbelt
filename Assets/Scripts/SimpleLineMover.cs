@@ -89,4 +89,6 @@ public class SimpleLineMover : MonoBehaviour
         i = 1;
         isMoving = true;
     }
+
+    //メモ　お客さんを追加する
 }
