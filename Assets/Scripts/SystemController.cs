@@ -6,6 +6,7 @@ using UnityEditor.Search;
 public class SystemController : MonoBehaviour
 {
     public static SystemController Instance; // シングルトンでどこからでも呼べるように
+    [SerializeField] private string Text;
 
     [SerializeField] private TextMeshProUGUI coinText;
     [SerializeField] private Image zukanHutuuImage;
@@ -18,6 +19,8 @@ public class SystemController : MonoBehaviour
     [SerializeField] private PanSpawner spawner;
     [SerializeField] private TextMeshProUGUI durationUpgradeButtonCoinText;
     [SerializeField] private TextMeshProUGUI speedUpgradeButtonCoinText;
+    [SerializeField] private TextMeshProUGUI speedLevel;
+    [SerializeField] private TextMeshProUGUI durationLevel;
     //[SerializeField] private int xamount = 100; //アップグレードに必要なコインの数
     public int coins = 0;//所持金
     //↓全部初期値
