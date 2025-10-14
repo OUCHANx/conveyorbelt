@@ -35,6 +35,7 @@ public class SystemController : MonoBehaviour
     }
     private void Start()
     {
+
         // これはベルトコンベアの速さ
         speedUpgradeButton.onClick.AddListener(() =>
         {
@@ -46,6 +47,8 @@ public class SystemController : MonoBehaviour
                 speedUpgradeButtonCoinText.text = speedUpgradeCost.ToString() + "円";
                 //テキストを用意
                 Debug.Log($"レベル{speedUpgradelevel}になりました。次の必要コイン:{speedUpgradeCost}");
+                if (speedLevel != null)
+                    speedLevel.text = "レベル" + speedUpgradelevel.ToString();
             }
         });
 
@@ -60,6 +63,8 @@ public class SystemController : MonoBehaviour
                 durationUpgradeButtonCoinText.text = durationUpgradeCost.ToString() + "円";
                 //テキストを用意
                 Debug.Log($"レベル{durationUpgradeLevel}になりました。次の必要コイン:{durationUpgradeCost}");
+                if (durationLevel != null)
+                    durationLevel.text = "レベル" + durationUpgradeLevel.ToString();
             }
         });
     }
@@ -69,6 +74,7 @@ public class SystemController : MonoBehaviour
         UpdateHutuuImage();
         UpdateBlackImage();
         UpdatePinkImage();
+        levelText();
     }
 
     public void AddCoins(int amount)
@@ -105,6 +111,10 @@ public class SystemController : MonoBehaviour
         spawner.IncreaseX(1);
         if (coinText != null)
             coinText.text = coins.ToString() + "円";
+    }
+    void levelText()
+    {
+        
     }
 
     public void AddHutuuhaving(int amountHutuu)
