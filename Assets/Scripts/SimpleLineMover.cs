@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -11,6 +12,7 @@ public class SimpleLineMover : MonoBehaviour
     [SerializeField] private UnityEvent onEnd;   // 終点到達時のイベント（任意）
     [SerializeField] private AudioSource sfxSource;
     [SerializeField] PanSpawner spawner;
+    [SerializeField] private TextMeshProUGUI statusText;
 
     public bool isMoving = false;
     private int i; // 目標ポイントのインデックス
@@ -29,6 +31,7 @@ public class SimpleLineMover : MonoBehaviour
             {
                 isMoving = !isMoving;
                 Time.timeScale = isMoving ? 1 : 0;
+                statusText.text = isMoving ? "停止する" : "再開する";
             });
     }
 
