@@ -7,7 +7,7 @@ public class SimpleLineMover : MonoBehaviour
 {
     [SerializeField] private LineRenderer line;
     [SerializeField] private float speed;
-    [SerializeField] private Button onoffButton;
+    [SerializeField] static Button onoffButton;
     [SerializeField] private AudioClip destroySound;
     [SerializeField] private UnityEvent onEnd;   // 終点到達時のイベント（任意）
     [SerializeField] private AudioSource sfxSource;
@@ -32,6 +32,11 @@ public class SimpleLineMover : MonoBehaviour
                 isMoving = !isMoving;
                 Time.timeScale = isMoving ? 1 : 0;
                 statusText.text = isMoving ? "停止する" : "再開する";
+                // if (isMoving)
+                // {
+                //     PreventRapidClick();
+                // }
+
             });
     }
 
@@ -91,5 +96,20 @@ public class SimpleLineMover : MonoBehaviour
         transform.position = line.GetPosition(0);
         i = 1;
         isMoving = true;
+    }
+    //onoffButtonを連続で押せないようにする
+    public void PreventRapidClick()
+    {
+        onoffButton.interactable = false;
+        Invoke("OnEnable", 2f); // 2秒後にボタンを再度有効化
+    }
+    public void OnEnable()
+    {
+        onoffButton.interactable = true;
+    }
+
+    void OnDisable()
+    {
+        onoffButton.interactable = false;
     }
 }
