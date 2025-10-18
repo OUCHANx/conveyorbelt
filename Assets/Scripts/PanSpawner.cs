@@ -44,8 +44,6 @@ public class PanSpawner : MonoBehaviour
                 // OFFになったらループ停止
                 StopCoroutine(spawnRoutine);
                 spawnRoutine = null;
-                //ここに追加
-                mover.PreventRapidClick();
             }
         }
     }
