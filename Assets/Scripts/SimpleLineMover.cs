@@ -107,9 +107,4 @@ public class SimpleLineMover : MonoBehaviour
     {
         onoffButton.interactable = true;
     }
-
-    // void OnDisable()
-    // {
-    //     onoffButton.interactable = false;
-    // }
 }
