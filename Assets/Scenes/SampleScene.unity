@@ -950,7 +950,7 @@ GameObject:
   - component: {fileID: 382305970}
   - component: {fileID: 382305971}
   m_Layer: 0
-  m_Name: Slider
+  m_Name: bgmSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4248,7 +4248,7 @@ GameObject:
   - component: {fileID: 1210034905}
   - component: {fileID: 1210034906}
   m_Layer: 0
-  m_Name: Slider (1)
+  m_Name: soundEffectSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
