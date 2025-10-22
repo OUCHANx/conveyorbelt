@@ -8,7 +8,7 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] private Button upgradeButton;
     [SerializeField] private Button shukkaButton;
     [SerializeField] private Button bagButton;
-
+    [SerializeField] private Button settingsButton;
 
     [SerializeField] private Button zukanxButton;
     [SerializeField] private GameObject zukanpanel;
@@ -19,7 +19,8 @@ public class ButtonManager : MonoBehaviour
 
     [SerializeField] private Button shukkaxButton;
     [SerializeField] private GameObject shukkapanel;
-
+    [SerializeField] private Button settingsxButton;
+    [SerializeField] private GameObject settingspanel;
 
     [SerializeField] private GameObject line;
 
@@ -39,6 +40,8 @@ public class ButtonManager : MonoBehaviour
             shukkaButton.onClick.AddListener(OnshukkaButtonClicked);
         if (bagButton != null)
             bagButton.onClick.AddListener(OnBagButtonClicked);
+        if (settingsButton != null)
+            settingsButton.onClick.AddListener(OnSettingsButtonClicked);
 
 
         //----バツボタン押したら
@@ -48,6 +51,10 @@ public class ButtonManager : MonoBehaviour
             upgradeContentsxButton.onClick.AddListener(OnUpgradeContentsXButtonClicked);//アップグレードパネルのxボタン
         if (shukkaxButton != null)
             shukkaxButton.onClick.AddListener(OnshukkaButtonXClicked);
+        if (shukkaxButton != null)
+            shukkaxButton.onClick.AddListener(OnSettingsButtonXClicked);//出荷パネルのxボタン
+        if (settingsxButton != null)
+            settingsxButton.onClick.AddListener(OnSettingsButtonXClicked);//設定パネルのxボタン
     }
 
     private void OnZukanButtonClicked()
@@ -80,6 +87,12 @@ public class ButtonManager : MonoBehaviour
     {
         Debug.Log("バッグボタンがクリックされました");
     }
+
+    private void OnSettingsButtonClicked()
+    {
+        settingspanel.SetActive(true);
+        Debug.Log("設定ボタンがクリックされました");
+    }
 //------------------↓↓バツボタン押したら↓↓--------------------//
     private void OnZukanXButtonClicked()
     {
@@ -104,6 +117,13 @@ public class ButtonManager : MonoBehaviour
         if (shukkapanel.activeSelf)
         {
             shukkapanel.SetActive(false);
+        }
+    }
+    private void OnSettingsButtonXClicked()
+    {
+        if (settingspanel.activeSelf)
+        {
+            settingspanel.SetActive(false);
         }
     }
 
