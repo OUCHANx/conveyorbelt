@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class SEManager : MonoBehaviour
 {
+    public static SEManager Instance;
     [SerializeField] private AudioSource bgmSource;  // カメラ用
     [SerializeField] private AudioSource sfxSource;  // 効果音用
 
@@ -13,6 +14,16 @@ public class SEManager : MonoBehaviour
     [SerializeField] private AudioClip clipoff;
     [SerializeField] private AudioClip clickClip;
     private bool isOn = false;
+    void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+        DontDestroyOnLoad(gameObject); // 必要なければ削除して可
+    }
     void Start()
     {
         //音を流したいけど音源が短いからループで流す

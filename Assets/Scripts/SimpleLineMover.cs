@@ -8,9 +8,9 @@ public class SimpleLineMover : MonoBehaviour
     [SerializeField] private LineRenderer line;
     [SerializeField] private float speed;
     [SerializeField] private Button onoffButton;
-    [SerializeField] private AudioClip destroySound;
+    //[SerializeField] private AudioClip destroySound;
     [SerializeField] private UnityEvent onEnd;   // 終点到達時のイベント（任意）
-    [SerializeField] private AudioSource sfxSource;
+    //[SerializeField] private AudioSource sfxSource;
     [SerializeField] PanSpawner spawner;
     [SerializeField] private TextMeshProUGUI statusText;
 
@@ -64,10 +64,7 @@ public class SimpleLineMover : MonoBehaviour
                 var go = hit.transform.gameObject;
                 if (go.CompareTag("PanHutuu"))
                 {
-                    if (destroySound != null && sfxSource != null)
-                    {
-                        sfxSource.PlayOneShot(destroySound);
-                    }
+                    SEManager.Instance.click();
                     //if (go.name.Contains("Normal"))
                     //{
                     // spawner.AddCoin(10);
