@@ -64,6 +64,7 @@ public class SimpleLineMover : MonoBehaviour
                 var go = hit.transform.gameObject;
                 if (go.CompareTag("PanHutuu"))
                 {
+                    //効果音
                     SEManager.Instance.click();
                     //if (go.name.Contains("Normal"))
                     //{
