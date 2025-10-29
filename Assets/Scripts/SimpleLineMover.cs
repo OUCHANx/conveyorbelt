@@ -66,18 +66,6 @@ public class SimpleLineMover : MonoBehaviour
                 {
                     //効果音
                     SEManager.Instance.click();
-                    //if (go.name.Contains("Normal"))
-                    //{
-                    // spawner.AddCoin(10);
-                    //}
-                    //else if (go.name.Contains("Black"))
-                    //{
-                    //  spawner.AddCoin(50);
-                    //}
-                    //else if (go.name.Contains("Pink"))
-                    //{
-                    //  spawner.AddCoin(100);
-                    //}
                     // クリックしたオブジェクトを記録
                     Destroy(go);
                     clickedGameObject = go;
