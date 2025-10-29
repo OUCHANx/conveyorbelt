@@ -4813,7 +4813,7 @@ MonoBehaviour:
   speedUpgradeButtonCoinText: {fileID: 777663719}
   speedLevel: {fileID: 2112344657}
   durationLevel: {fileID: 2030651748}
-  coins: 11
+  coins: 1000
 --- !u!1 &1330646504
 GameObject:
   m_ObjectHideFlags: 0
