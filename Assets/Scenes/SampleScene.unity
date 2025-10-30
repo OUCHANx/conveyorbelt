@@ -4069,7 +4069,7 @@ LineRenderer:
   - {x: 2.236191, y: 0.9792607, z: 0}
   - {x: -2.256237, y: 0.9792607, z: 0}
   - {x: -2.256237, y: -1.1825556, z: 0}
-  - {x: 2.8076806, y: -1.182556, z: 0}
+  - {x: 2.80768, y: -1.182556, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
