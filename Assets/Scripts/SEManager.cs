@@ -10,9 +10,9 @@ public class SEManager : MonoBehaviour
     [SerializeField] private AudioSource sfxSource;  // 効果音用
 
     [SerializeField] private Button onoffButton;
+    [SerializeField] private AudioClip clickClip;
     [SerializeField] private AudioClip clipon;
     [SerializeField] private AudioClip clipoff;
-    [SerializeField] private AudioClip clickClip;
     private bool isOn = false;
     void Awake()
     {
@@ -44,6 +44,10 @@ public class SEManager : MonoBehaviour
     {
         sfxSource.PlayOneShot(clip);
     }
-
+    //パンをクリックした時の音　clickはSimpleLineMover.csから呼ばれる
     public void click() => PlaySE(clickClip);
+    //Onの時の音 このスクリプトから呼ばれる
+    public void isOn() => PlaySE(clipon);
+    //Offの時の音 このスクリプトから呼ばれる
+    public void isOff() => PlaySE(clipoff);
 }
