@@ -10,7 +10,6 @@ public class SEManager : MonoBehaviour
     [SerializeField] private AudioClip panClickClip;
     [SerializeField] private AudioClip clipon;
     [SerializeField] private AudioClip clipoff;
-
     [SerializeField] private AudioSource audioSource;
     private bool isOn = false;
     void Awake()

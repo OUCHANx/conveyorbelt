@@ -2,15 +2,27 @@ using UnityEngine;
 
 public class BGMManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private AudioSource audioSource;
+    public static BGMManager Instance;
+
+void Awake()
     {
-        
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+
+            audioSource = GetComponent<AudioSource>();
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        
+        audioSource.loop = true;
+        audioSource.Play();
     }
 }

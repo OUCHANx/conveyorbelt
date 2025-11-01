@@ -87,7 +87,7 @@ public class SimpleLineMover : MonoBehaviour
     public void PreventRapidClick()
     {
         onoffButton.interactable = false;
-        Invoke("EnableButton", 10f); // 10秒後にボタンを再度有効化
+        Invoke("EnableButton", 1f); // 1秒後にボタンを再度有効化
     }
     public void EnableButton()
     {
