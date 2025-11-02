@@ -6990,7 +6990,7 @@ GameObject:
   - component: {fileID: 1840829498}
   - component: {fileID: 1840829497}
   m_Layer: 0
-  m_Name: AudioSettingsController
+  m_Name: VolumeSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
