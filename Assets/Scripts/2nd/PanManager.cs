@@ -1,16 +1,31 @@
+using System.Collections.Generic;
+using System.Security.Cryptography;
+using NUnit.Framework;
 using UnityEngine;
 
 public class PanManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private GameObject panPrefab;
+    [SerializeField] private List<GameObject> pans = new List<GameObject>();
+
+    public void CreatePan()
     {
-        
+        var canvas = FindObjectOfType<Canvas>();
+        GameObject newPan = Instantiate(panPrefab, canvas.transform, false);
+
+        //ベルトコンベアから流れてくるようにしたい
+
+        pans.Add(newPan);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void DeletePan()
     {
-        
+        if (pans.Count > 0)
+        {
+            GameObject lastPan = pans[pans.Count - 1];
+            Destroy(lastPan);
+            pans.RemoveAt(pans.Count - 1);
+            //pans.Remove(lastPan);でもいい
+        }
     }
 }
