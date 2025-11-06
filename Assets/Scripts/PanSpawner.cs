@@ -91,6 +91,7 @@ public class PanSpawner : MonoBehaviour
             lineMover.Setup(path, x);
         }
     }
+    //ここに書くべきではない
     public void IncreaseX(int increaseDelta)
     {
         x += increaseDelta;
