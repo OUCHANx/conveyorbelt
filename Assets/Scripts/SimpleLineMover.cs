@@ -39,6 +39,7 @@ public class SimpleLineMover : MonoBehaviour
 
             });
     }
+    //ボタンが押されたらオブジェクトが運ばれてくる。タップしたら消えてまたオブジェクトが流れてくる
 
     void Update()
     {
@@ -54,7 +55,6 @@ public class SimpleLineMover : MonoBehaviour
                 if (i >= line.positionCount) onEnd?.Invoke();//Panが終点に到達したら消える処理、パンにつける
             }
         }
-        // --- クリック処理（オン/オフ関係なく常に反応） ---
         if (Input.GetMouseButtonDown(0))
         {
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
