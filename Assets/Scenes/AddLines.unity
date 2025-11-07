@@ -391,7 +391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 1403793952}
-  panNormalPrefab: {fileID: 9167691164637347971, guid: 32d104395d6a44bbea782187f4340b2a, type: 3}
+  panNormalPrefab: {fileID: 7241313956235270121, guid: 0c03fa33590d4448daaade71c8d4ad0f, type: 3}
   panBlackPrefab: {fileID: 9167691164637347971, guid: 32d104395d6a44bbea782187f4340b2a, type: 3}
   panPinkPrefab: {fileID: 9167691164637347971, guid: 32d104395d6a44bbea782187f4340b2a, type: 3}
   x: 20
@@ -935,8 +935,6 @@ LineRenderer:
   m_Positions:
   - {x: -1.87, y: 0.96791553, z: 0}
   - {x: 1, y: 0.9681419, z: 0}
-  - {x: 1.7596723, y: 1.0467007, z: -5.8898125}
-  - {x: 2.232668, y: 1.0703504, z: -5.8898125}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -944,8 +942,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.003968254
-        value: 0.056601614
+        time: 0
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1062,7 +1060,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   spawner: {fileID: 840112058}
-  statusText: {fileID: 1349687602}
+  statusText: {fileID: 1777140013}
   isMoving: 0
 --- !u!1 &1777140011
 GameObject:
