@@ -391,7 +391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 1403793952}
-  panNormalPrefab: {fileID: 7241313956235270121, guid: 0c03fa33590d4448daaade71c8d4ad0f, type: 3}
+  panNormalPrefab: {fileID: 9167691164637347971, guid: 32d104395d6a44bbea782187f4340b2a, type: 3}
   panBlackPrefab: {fileID: 9167691164637347971, guid: 32d104395d6a44bbea782187f4340b2a, type: 3}
   panPinkPrefab: {fileID: 9167691164637347971, guid: 32d104395d6a44bbea782187f4340b2a, type: 3}
   x: 20
