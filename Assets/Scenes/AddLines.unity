@@ -391,10 +391,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 1403793952}
-  panNormalPrefab: {fileID: 0}
-  panBlackPrefab: {fileID: 0}
-  panPinkPrefab: {fileID: 0}
-  x: 0.5
+  panNormalPrefab: {fileID: 9167691164637347971, guid: 32d104395d6a44bbea782187f4340b2a, type: 3}
+  panBlackPrefab: {fileID: 9167691164637347971, guid: 32d104395d6a44bbea782187f4340b2a, type: 3}
+  panPinkPrefab: {fileID: 9167691164637347971, guid: 32d104395d6a44bbea782187f4340b2a, type: 3}
+  x: 20
   interval: 3
   normalPercent: 100
   blackPercent: 0
@@ -911,7 +911,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10756, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -933,8 +933,10 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Positions:
-  - {x: -1.7559531, y: 0.96791553, z: 0}
-  - {x: 1, y: 0.9681419, z: 1}
+  - {x: -1.87, y: 0.96791553, z: 0}
+  - {x: 1, y: 0.9681419, z: 0}
+  - {x: 1.7596723, y: 1.0467007, z: -5.8898125}
+  - {x: 2.232668, y: 1.0703504, z: -5.8898125}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -980,7 +982,7 @@ LineRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_ColorSpace: -1
+      m_ColorSpace: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
@@ -1002,8 +1004,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403793950}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.899, y: 1.062, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.89900005, y: 1.062, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1054,7 +1056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   line: {fileID: 1403793952}
-  speed: 0
+  speed: 20
   onoffButton: {fileID: 173646735}
   onEnd:
     m_PersistentCalls:
@@ -1251,7 +1253,7 @@ SceneRoots:
   - {fileID: 1347852335}
   - {fileID: 1025641769}
   - {fileID: 1364026556}
-  - {fileID: 1403793953}
   - {fileID: 2063191285}
   - {fileID: 840112059}
   - {fileID: 1566545415}
+  - {fileID: 1403793953}
