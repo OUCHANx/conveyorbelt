@@ -881,7 +881,7 @@ GameObject:
   - component: {fileID: 1403793953}
   - component: {fileID: 1403793952}
   m_Layer: 0
-  m_Name: line
+  m_Name: conveyor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
