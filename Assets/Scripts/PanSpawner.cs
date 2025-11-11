@@ -71,8 +71,9 @@ public class PanSpawner : MonoBehaviour
             yield return new WaitForSeconds(interval);
         }
     }
-
-    void SpawnOne()
+    
+    //パン生成スクリプト
+        void SpawnOne()
     {
         //if (path == null || panPrefab == null) return;
         // 出現位置（ラインの最初の点）
