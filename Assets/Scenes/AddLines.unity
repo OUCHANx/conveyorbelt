@@ -201,7 +201,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 173646736}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 840112058}
+        m_TargetAssemblyTypeName: PanSpawner, Assembly-CSharp
+        m_MethodName: createPan
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &173646736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -399,7 +411,7 @@ MonoBehaviour:
   normalPercent: 100
   blackPercent: 0
   pinkPercent: 0
-  mover: {fileID: 1566545416}
+  mover: {fileID: 1566545417}
 --- !u!4 &840112059
 Transform:
   m_ObjectHideFlags: 0
@@ -1018,7 +1030,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1566545415}
-  - component: {fileID: 1566545416}
+  - component: {fileID: 1566545417}
   m_Layer: 0
   m_Name: conveyorbelt
   m_TagString: Untagged
@@ -1041,7 +1053,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1566545416
+--- !u!114 &1566545417
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1050,7 +1062,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1566545414}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f24e32bc0e9040fcbe95f959c0cecf0, type: 3}
+  m_Script: {fileID: 11500000, guid: f4bf97dea709145158969c0383096ed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   line: {fileID: 1403793952}
@@ -1253,5 +1265,5 @@ SceneRoots:
   - {fileID: 1364026556}
   - {fileID: 2063191285}
   - {fileID: 840112059}
-  - {fileID: 1566545415}
   - {fileID: 1403793953}
+  - {fileID: 1566545415}
