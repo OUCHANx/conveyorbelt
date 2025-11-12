@@ -7,7 +7,7 @@ public class secondSimpleLineMover : MonoBehaviour
 {
     [SerializeField] private LineRenderer line;
     [SerializeField] private float speed;
-    [SerializeField] private Button onoffButton;
+    [SerializeField] private Button addButton;
     [SerializeField] private UnityEvent onEnd;   // 終点到達時のイベント（任意）
     [SerializeField] PanSpawner spawner;
     [SerializeField] private TextMeshProUGUI statusText;
@@ -22,16 +22,16 @@ public class secondSimpleLineMover : MonoBehaviour
             i = 1; //目標地点は１
         }
 
-        if (onoffButton != null)
-            onoffButton.onClick.AddListener(() =>
+        if (addButton != null)
+            addButton.onClick.AddListener(() =>
             {
                 isMoving = !isMoving;
-                Time.timeScale = isMoving ? 1 : 0;
-                statusText.text = isMoving ? "停止する" : "再開する";
-                if (isMoving)
-                {
-                    PreventRapidClick();
-                }
+                // Time.timeScale = isMoving ? 1 : 0;
+                // statusText.text = isMoving ? "停止する" : "再開する";
+                // if (isMoving)
+                // {
+                //     PreventRapidClick();
+                // }
 
             });
     }
@@ -77,13 +77,13 @@ public class secondSimpleLineMover : MonoBehaviour
         isMoving = true;
     }
     //onoffButtonを連続で押せないようにする
-    public void PreventRapidClick()
+    public void PreventRapidClick()//使いません
     {
-        onoffButton.interactable = false;
+        addButton.interactable = false;
         Invoke("EnableButton", 1f); // 1秒後にボタンを再度有効化
     }
     public void EnableButton()
     {
-        onoffButton.interactable = true;
+        addButton.interactable = true;
     }
 }
