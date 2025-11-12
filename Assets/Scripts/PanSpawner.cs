@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using System.Collections.Generic;
 public class PanSpawner : MonoBehaviour
 {
     [Header("経路設定")]
@@ -19,7 +20,7 @@ public class PanSpawner : MonoBehaviour
 
     [SerializeField] private secondSimpleLineMover mover;  // ← SimpleLineMoverを参照しておく
     // private Coroutine spawnRoutine;
-
+    private List<GameObject> spawnedPans = new List<GameObject>(); // 生成済みパンを管理
 
     void Start()
     {
@@ -79,7 +80,7 @@ public class PanSpawner : MonoBehaviour
     //     }
     // }
     //パン生成スクリプト
-        void SpawnOne()
+    void SpawnOne()
     {
         //if (path == null || panPrefab == null) return;
         // 出現位置（ラインの最初の点）
@@ -97,12 +98,13 @@ public class PanSpawner : MonoBehaviour
         {
             lineMover.Setup(path, x);
         }
+        spawnedPans.Add(go);
     }
     //ここに書くべきではない
     public void IncreaseX(int increaseDelta)
     {
         x += increaseDelta;
-        if(x >= 2)
+        if (x >= 2)
         {
             Debug.Log("レベル２になりました");
         }
@@ -112,8 +114,29 @@ public class PanSpawner : MonoBehaviour
         interval -= dicreaseDuration;
         Debug.Log("パンの生成間隔が短くなりました");
     }
+
     public void createPan()
     {
+        if (spawnedPans.Count > 0)
+        {
+            // 既にパンが存在する場合は新しいパンを生成しない
+            Debug.Log("パンはもうすでに生成されています");
+            return;
+        }
         SpawnOne();
+    }
+
+    public void deletePan()
+    {
+        if (spawnedPans.Count > 0)
+        {
+            GameObject panToDelete = spawnedPans[spawnedPans.Count - 1];
+            spawnedPans.RemoveAt(spawnedPans.Count - 1);
+            Destroy(panToDelete);
+        }
+        else
+        {
+            Debug.Log("削除するパンが存在しません");
+        }
     }
 }

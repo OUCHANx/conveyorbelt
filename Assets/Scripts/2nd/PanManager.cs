@@ -10,7 +10,7 @@ public class PanManager : MonoBehaviour
 
     public void CreatePan()
     {
-        var canvas = FindObjectOfType<Canvas>();
+        var canvas = FindFirstObjectByType<Canvas>();
         GameObject newPan = Instantiate(panPrefab, canvas.transform, false);
 
         //ベルトコンベアから流れてくるようにしたい
