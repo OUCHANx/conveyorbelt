@@ -82,8 +82,6 @@ public class PanSpawner : MonoBehaviour
     //パン生成スクリプト
     void SpawnOne()
     {
-        //if (path == null || panPrefab == null) return;
-        // 出現位置（ラインの最初の点）
         Vector3 pos = path.useWorldSpace
             ? path.GetPosition(0)
             : path.transform.TransformPoint(path.GetPosition(0));
@@ -93,7 +91,7 @@ public class PanSpawner : MonoBehaviour
         // パンを生成
         var go = Instantiate(prefab, pos, Quaternion.identity);
 
-        var lineMover = go.GetComponent<SimpleLineMover>();
+        var lineMover = go.GetComponent<secondSimpleLineMover>();
         if (lineMover != null)
         {
             lineMover.Setup(path, x);
@@ -131,12 +129,18 @@ public class PanSpawner : MonoBehaviour
         if (spawnedPans.Count > 0)
         {
             GameObject panToDelete = spawnedPans[spawnedPans.Count - 1];
-            spawnedPans.RemoveAt(spawnedPans.Count - 1);
-            Destroy(panToDelete);
-        }
-        else
-        {
-            Debug.Log("削除するパンが存在しません");
+
+            var lineMover = panToDelete.GetComponent<secondSimpleLineMover>();
+            if (lineMover != null && lineMover.i >= lineMover.line.positionCount)
+            {
+                spawnedPans.RemoveAt(spawnedPans.Count - 1);
+                Destroy(panToDelete);
+                Debug.Log("最終地点のパンを削除しました");
+            }
+            else
+            {
+                Debug.Log("パンはまだ最終地点に到達していません");
+            }
         }
     }
 }
