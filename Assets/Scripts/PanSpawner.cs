@@ -20,6 +20,7 @@ public class PanSpawner : MonoBehaviour
 
     [SerializeField] private secondSimpleLineMover mover;  // ← SimpleLineMoverを参照しておく
     // private Coroutine spawnRoutine;
+    [SerializeField] private Transform pastryBoard;
     private List<GameObject> spawnedPans = new List<GameObject>(); // 生成済みパンを管理
 
     void Start()
@@ -142,5 +143,19 @@ public class PanSpawner : MonoBehaviour
                 Debug.Log("パンはまだ最終地点に到達していません");
             }
         }
+    }
+
+    public void addToPastryBoard()
+    {
+        GameObject lastPan = spawnedPans[spawnedPans.Count - 1];
+        var mover = lastPan.GetComponent<secondSimpleLineMover>();
+        if (mover != null && mover.i >= mover.line.positionCount)
+        {
+            mover.enabled = false; // linerendererからはずす
+
+            Vector3 center = pastryBoard.position;
+            lastPan.transform.position = center;
+        }
+
     }
 }
