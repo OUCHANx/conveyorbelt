@@ -2,7 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using System.Collections.Generic;
-public class PanSpawner : MonoBehaviour
+public class secondPanSpawner : MonoBehaviour
 {
     [Header("経路設定")]
     [SerializeField] private LineRenderer path;   // ベルトのライン
@@ -18,7 +18,7 @@ public class PanSpawner : MonoBehaviour
     [SerializeField, Range(0, 100)] public int blackPercent = 15;
     [SerializeField, Range(0, 100)] public int pinkPercent = 5;
 
-    [SerializeField] private SimpleLineMover mover;  // ← SimpleLineMoverを参照しておく
+    [SerializeField] private secondSimpleLineMover mover;  // ← SimpleLineMoverを参照しておく
     // private Coroutine spawnRoutine;
     [SerializeField] private Transform pastryBoard;
     private List<GameObject> spawnedPans = new List<GameObject>(); // 生成済みパンを管理
@@ -27,7 +27,7 @@ public class PanSpawner : MonoBehaviour
     {
         // 最初は何もしない（ボタンが押されて isMoving = true になったら開始）
         // mover の参照がなければ同じオブジェクトから探す
-        if (mover == null) mover = GetComponent<SimpleLineMover>();
+        if (mover == null) mover = GetComponent<secondSimpleLineMover>();
     }
 
     void Update()
@@ -92,7 +92,7 @@ public class PanSpawner : MonoBehaviour
         // パンを生成
         var go = Instantiate(prefab, pos, Quaternion.identity);
 
-        var lineMover = go.GetComponent<SimpleLineMover>();
+        var lineMover = go.GetComponent<secondSimpleLineMover>();
         if (lineMover != null)
         {
             lineMover.Setup(path, x);
@@ -114,48 +114,48 @@ public class PanSpawner : MonoBehaviour
         Debug.Log("パンの生成間隔が短くなりました");
     }
 
-    // public void createPan()
-    // {
-    //     if (spawnedPans.Count > 0)
-    //     {
-    //         // 既にパンが存在する場合は新しいパンを生成しない
-    //         Debug.Log("パンはもうすでに生成されています");
-    //         return;
-    //     }
-    //     SpawnOne();
-    // }
+    public void createPan()
+    {
+        if (spawnedPans.Count > 0)
+        {
+            // 既にパンが存在する場合は新しいパンを生成しない
+            Debug.Log("パンはもうすでに生成されています");
+            return;
+        }
+        SpawnOne();
+    }
 
-    // public void deletePan()
-    // {
-    //     if (spawnedPans.Count > 0)
-    //     {
-    //         GameObject panToDelete = spawnedPans[spawnedPans.Count - 1];
+    public void deletePan()
+    {
+        if (spawnedPans.Count > 0)
+        {
+            GameObject panToDelete = spawnedPans[spawnedPans.Count - 1];
 
-    //         var lineMover = panToDelete.GetComponent<secondSimpleLineMover>();
-    //         if (lineMover != null && lineMover.i >= lineMover.line.positionCount)
-    //         {
-    //             spawnedPans.RemoveAt(spawnedPans.Count - 1);
-    //             Destroy(panToDelete);
-    //             Debug.Log("最終地点のパンを削除しました");
-    //         }
-    //         else
-    //         {
-    //             Debug.Log("パンはまだ最終地点に到達していません");
-    //         }
-    //     }
-    // }
+            var lineMover = panToDelete.GetComponent<secondSimpleLineMover>();
+            if (lineMover != null && lineMover.i >= lineMover.line.positionCount)
+            {
+                spawnedPans.RemoveAt(spawnedPans.Count - 1);
+                Destroy(panToDelete);
+                Debug.Log("最終地点のパンを削除しました");
+            }
+            else
+            {
+                Debug.Log("パンはまだ最終地点に到達していません");
+            }
+        }
+    }
 
-    // public void addToPastryBoard()
-    // {
-    //     GameObject lastPan = spawnedPans[spawnedPans.Count - 1];
-    //     var mover = lastPan.GetComponent<secondSimpleLineMover>();
-    //     if (mover != null && mover.i >= mover.line.positionCount)
-    //     {
-    //         mover.enabled = false; // linerendererからはずす
+    public void addToPastryBoard()
+    {
+        GameObject lastPan = spawnedPans[spawnedPans.Count - 1];
+        var mover = lastPan.GetComponent<secondSimpleLineMover>();
+        if (mover != null && mover.i >= mover.line.positionCount)
+        {
+            mover.enabled = false; // linerendererからはずす
 
-    //         Vector3 center = pastryBoard.position;
-    //         lastPan.transform.position = center;
-    //     }
+            Vector3 center = pastryBoard.position;
+            lastPan.transform.position = center;
+        }
 
-    // }
+    }
 }

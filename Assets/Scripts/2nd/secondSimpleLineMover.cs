@@ -9,8 +9,8 @@ public class secondSimpleLineMover : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private Button addButton;
     [SerializeField] private UnityEvent onEnd;   // 終点到達時のイベント（任意）
-    [SerializeField] PanSpawner spawner;
-    [SerializeField] private TextMeshProUGUI statusText;
+    [SerializeField] secondPanSpawner spawner;
+    //[SerializeField] private TextMeshProUGUI statusText;
     [SerializeField] private secondSimpleLineMover lineMover;
 
     public bool isMoving = false;
