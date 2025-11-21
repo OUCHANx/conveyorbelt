@@ -193,3 +193,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0fce795abc92414eb058b4b8b620fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panName: "\u30D4\u30F3\u30AF"
+  hp: 1
+  healthGauge: {fileID: 0}
