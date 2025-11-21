@@ -15,6 +15,15 @@ public class Paninfo : MonoBehaviour
 
     // パンがこね台に触れたらHPセット＋表示
     private void OnTriggerEnter2D(Collider2D other)
+
+
+
+
+
+
+
+
+    //ontriggerenter2dの発動条件調べる
     {
         if (other.CompareTag("PastryBoard")) // 台にTagを付けておく
         {
