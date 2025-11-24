@@ -6,8 +6,6 @@ public class Paninfo : MonoBehaviour
     public string panName; // 例: "a" または "b"
     public int hp;         // 初期HP（a=10, b=20など）
     public HealthGauge healthGauge; // Inspectorでセット（子オブジェクトでもOK）
-    private BoxCollider2D boxCollider;
-
     private void Start()
     {
         // こね台に乗るまではゲージ非表示
