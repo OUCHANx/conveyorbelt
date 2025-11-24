@@ -145,17 +145,46 @@ public class secondPanSpawner : MonoBehaviour
         }
     }
 
+    // public void addToPastryBoard()
+    // {
+    //     GameObject lastPan = spawnedPans[spawnedPans.Count - 1];
+    //     var mover = lastPan.GetComponent<secondSimpleLineMover>();
+    //     if (mover != null && mover.i >= mover.line.positionCount)
+    //     {
+    //         mover.enabled = false; // linerendererからはずす
+
+    //         Vector3 center = pastryBoard.position;
+    //         lastPan.transform.position = center;
+    //     }
+    // }
     public void addToPastryBoard()
+{
+    GameObject lastPan = spawnedPans[spawnedPans.Count - 1];
+    var mover = lastPan.GetComponent<secondSimpleLineMover>();
+
+    if (mover != null && mover.i >= mover.line.positionCount)
     {
-        GameObject lastPan = spawnedPans[spawnedPans.Count - 1];
-        var mover = lastPan.GetComponent<secondSimpleLineMover>();
-        if (mover != null && mover.i >= mover.line.positionCount)
-        {
-            mover.enabled = false; // linerendererからはずす
+        mover.enabled = false; // LineRendererから外す
 
-            Vector3 center = pastryBoard.position;
-            lastPan.transform.position = center;
-        }
-
+        Vector3 center = pastryBoard.position;
+        StartCoroutine(MoveToPosition(lastPan, center, 1f)); // 1秒で移動
     }
+}
+
+IEnumerator MoveToPosition(GameObject obj, Vector3 target, float duration)
+{
+    Vector3 start = obj.transform.position;
+    float time = 0f;
+
+    while (time < duration)
+    {
+        time += Time.deltaTime;
+        float t = time / duration;
+        obj.transform.position = Vector3.Lerp(start, target, t);
+        yield return null;
+    }
+
+    obj.transform.position = target; // 最終位置を保証
+}
+
 }

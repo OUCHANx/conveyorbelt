@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class HealthGauge : MonoBehaviour
 {
+    public HealthGauge healthGauge;
     [SerializeField] private Image healthImage;
     [SerializeField] private Image burnImage;
     public float duration = 0.5f; //０.５秒でヘルスが減るアニメーションを実行
