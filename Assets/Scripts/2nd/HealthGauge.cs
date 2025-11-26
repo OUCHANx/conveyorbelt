@@ -29,9 +29,13 @@ public class HealthGauge : MonoBehaviour
 
     private void Update()
     {
+        //パンの位置が中心だったら
+        //if (secondPanMover.positionIndex == 0)
+        {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             TakeDamage(debugDamageRate);
+        }
         }
     }
 }

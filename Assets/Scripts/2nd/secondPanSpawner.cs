@@ -18,7 +18,7 @@ public class secondPanSpawner : MonoBehaviour
     [SerializeField, Range(0, 100)] public int blackPercent = 15;
     [SerializeField, Range(0, 100)] public int pinkPercent = 5;
 
-    [SerializeField] private secondSimpleLineMover mover;  // ← SimpleLineMoverを参照しておく
+    [SerializeField] public secondSimpleLineMover mover;  // ← SimpleLineMoverを参照しておく
     // private Coroutine spawnRoutine;
     [SerializeField] private Transform pastryBoard;
     private List<GameObject> spawnedPans = new List<GameObject>(); // 生成済みパンを管理
