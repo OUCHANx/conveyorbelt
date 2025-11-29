@@ -2518,7 +2518,7 @@ MonoBehaviour:
   healthImage: {fileID: 383260247}
   burnImage: {fileID: 929677690}
   duration: 0.5
-  debugDamageRate: 0.2
+  debugDamageRate: 0.1
   currentRate: 1
 --- !u!222 &1561434525
 CanvasRenderer:
@@ -2539,7 +2539,7 @@ GameObject:
   - component: {fileID: 1566545415}
   - component: {fileID: 1566545417}
   m_Layer: 0
-  m_Name: conveyorbelt
+  m_Name: secondSimpleLineMover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
