@@ -26,7 +26,6 @@ public class HealthGauge : MonoBehaviour
     {
         SetGauge(currentRate - rate);
     }
-
     private void Update()
     {
         //パンの位置が中心だったら
