@@ -2515,6 +2515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthGauge: {fileID: 1561434523}
+  SimpleLineMover: {fileID: 1566545417}
   healthImage: {fileID: 383260247}
   burnImage: {fileID: 929677690}
   duration: 0.5
