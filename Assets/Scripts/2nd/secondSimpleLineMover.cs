@@ -11,7 +11,7 @@ public class secondSimpleLineMover : MonoBehaviour
     [SerializeField] private UnityEvent onEnd;   // 終点到達時のイベント（任意）
     [SerializeField] secondPanSpawner spawner;
     //[SerializeField] private TextMeshProUGUI statusText;
-    [SerializeField] private secondSimpleLineMover lineMover;
+    public secondSimpleLineMover lineMover;
 
     public bool isMoving = false;
     public int i; // 目標ポイントのインデックス
