@@ -1,10 +1,12 @@
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
+using UnityEngine.Scripting.APIUpdating;
 
 public class HealthGauge : MonoBehaviour
 {
     public HealthGauge healthGauge;
+    public secondSimpleLineMover SimpleLineMover;
     [SerializeField] private Image healthImage;
     [SerializeField] private Image burnImage;
     public float duration = 0.5f; //０.５秒でヘルスが減るアニメーションを実行
@@ -12,6 +14,8 @@ public class HealthGauge : MonoBehaviour
     public float currentRate = 1.0f;
     public void Start()
     {
+        healthImage.enabled = false;
+        burnImage.enabled = false;
         SetGauge(1.0f);
     }
     public void SetGauge(float targetRate)
@@ -28,6 +32,12 @@ public class HealthGauge : MonoBehaviour
     }
     private void Update()
     {
+        //パンがpastryBoardの位置に来たら
+        if (SimpleLineMover.i == 1)
+        {
+            healthImage.enabled = true;
+            burnImage.enabled = true;
+        }
         //パンの位置が中心だったら
         //if (secondPanMover.positionIndex == 0)
         {
@@ -37,4 +47,6 @@ public class HealthGauge : MonoBehaviour
         }
         }
     }
+
+    //はじめはhpゲージ非表示
 }
