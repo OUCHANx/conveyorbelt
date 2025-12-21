@@ -15,8 +15,8 @@ public class HealthGauge : MonoBehaviour
     public float currentRate = 1.0f;
     public void Start()
     {
-        healthImage.enabled = false;
-        burnImage.enabled = false;
+        // healthImage.enabled = false;
+        // burnImage.enabled = false;
         SetGauge(1.0f);
     }
     public void SetGauge(float targetRate)
