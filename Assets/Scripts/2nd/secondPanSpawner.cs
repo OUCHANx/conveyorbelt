@@ -38,37 +38,9 @@ public class secondPanSpawner : MonoBehaviour
 
     void Update()
     {
-        // // ボタンで isMoving が切り替わるたびに生成ループをON/OFF
-        // if (mover != null)
-        // {
-        //     if (mover.isMoving && spawnRoutine == null)
-        //     {
-        //         // // ONになったらループ開始
-        //         // spawnRoutine = StartCoroutine(SpawnLoop());
-        //     }
-        //     else if (!mover.isMoving && spawnRoutine != null)
-        //     {
-        //         // OFFになったらループ停止
-        //         StopCoroutine(spawnRoutine);
-        //         spawnRoutine = null;
-        //     }
-        // }
-        // if (secondSimpleLineMover.i == 1 && mover.isMoving)
-        // {
-        //
-        // }
-        // else
-        // {
-        //     return;
-        // }
+        // ここで生成処理を行うのではなく、mover の状態に応じて生成を制御する
+        // 例えば、mover.isMoving が true のときだけ生成を行うなど
     }
-
-    //public void AddCoin(int amount)
-    //{
-    //  //  coin += amount;
-    //    if (coinText != null)
-    //        coinText.text = coin.ToString();
-    //}
     GameObject PickPrefabSimple()
     {
         int roll = Random.Range(0, 100); // 0〜99
@@ -77,15 +49,6 @@ public class secondPanSpawner : MonoBehaviour
         else if (roll < normalPercent + blackPercent) return panBlackPrefab;
         else return panPinkPrefab; // 残り
     }
-
-    // IEnumerator SpawnLoop()
-    // {
-    //     while (true)
-    //     {
-    //         SpawnOne();
-    //         yield return new WaitForSeconds(interval);
-    //     }
-    // }
     //パン生成スクリプト
     void SpawnOne()
     {
@@ -150,19 +113,6 @@ public class secondPanSpawner : MonoBehaviour
             }
         }
     }
-
-    // public void addToPastryBoard()
-    // {
-    //     GameObject lastPan = spawnedPans[spawnedPans.Count - 1];
-    //     var mover = lastPan.GetComponent<secondSimpleLineMover>();
-    //     if (mover != null && mover.i >= mover.line.positionCount)
-    //     {
-    //         mover.enabled = false; // linerendererからはずす
-
-    //         Vector3 center = pastryBoard.position;
-    //         lastPan.transform.position = center;
-    //     }
-    // }
     public void addToPastryBoard()
     {
         if (spawnedPans.Count == 0) return;
@@ -216,6 +166,9 @@ public class secondPanSpawner : MonoBehaviour
         {
             healthGauge.ResetGauge(); // ゲージ非表示＆HP最大に戻す
         }
+
+        //コインを増やす処理
+        //CoinManager.Instance.AddCoins(10); // 例: 10コイン増やす
     }
 
 }
