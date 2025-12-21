@@ -27,6 +27,7 @@ public class secondPanSpawner : MonoBehaviour
     [SerializeField] private Image healthImage;
     [SerializeField] private Image burnImage;
     private List<GameObject> spawnedPans = new List<GameObject>(); // 生成済みパンを管理
+    private GameObject pastryBoardPan;
 
     void Start()
     {
@@ -163,37 +164,58 @@ public class secondPanSpawner : MonoBehaviour
     //     }
     // }
     public void addToPastryBoard()
-{
-    GameObject lastPan = spawnedPans[spawnedPans.Count - 1];
-    var mover = lastPan.GetComponent<secondSimpleLineMover>();
-
-    if (mover != null && mover.i >= mover.line.positionCount)
     {
-        mover.enabled = false; // LineRendererから外す
+        if (spawnedPans.Count == 0) return;
 
-        Vector3 center = pastryBoard.position;
-        StartCoroutine(MoveToPosition(lastPan, center, 1f)); // 1秒で移動
-            healthGauge.isGaugeActive = true;
-            if (healthImage != null) healthImage.enabled = true;
-        if (burnImage != null) burnImage.enabled = true;
-    }
-}
+        GameObject lastPan = spawnedPans[spawnedPans.Count - 1];
+        var mover = lastPan.GetComponent<secondSimpleLineMover>();
 
-IEnumerator MoveToPosition(GameObject obj, Vector3 target, float duration)
-{
-    Vector3 start = obj.transform.position;
-    float time = 0f;
+        if (mover != null && mover.i >= mover.line.positionCount)
+        {
+            mover.enabled = false; // LineRendererから外す
 
-    while (time < duration)
-    {
-        time += Time.deltaTime;
-        float t = time / duration;
-        obj.transform.position = Vector3.Lerp(start, target, t);
-        yield return null;
+            Vector3 center = pastryBoard.position;
+            StartCoroutine(MoveToPosition(lastPan, center, 1f)); // 1秒で移動
+            pastryBoardPan = lastPan;
+
+            if (healthGauge != null)
+            {
+                healthGauge.OnGaugeEmpty -= HandleGaugeEmpty;
+                healthGauge.OnGaugeEmpty += HandleGaugeEmpty;
+                healthGauge.ShowGauge(1f); // 次のパン用に満タンで開始
+            }
+        }
     }
 
-    obj.transform.position = target; // 最終位置を保証
-    healthGauge.isGaugeActive = true;
-}
+    IEnumerator MoveToPosition(GameObject obj, Vector3 target, float duration)
+    {
+        Vector3 start = obj.transform.position;
+        float time = 0f;
+
+        while (time < duration)
+        {
+            time += Time.deltaTime;
+            float t = time / duration;
+            obj.transform.position = Vector3.Lerp(start, target, t);
+            yield return null;
+        }
+
+        obj.transform.position = target; // 最終位置を保証
+    }
+
+    private void HandleGaugeEmpty()
+    {
+        if (pastryBoardPan != null)
+        {
+            spawnedPans.Remove(pastryBoardPan);
+            Destroy(pastryBoardPan);
+            pastryBoardPan = null;
+        }
+
+        if (healthGauge != null)
+        {
+            healthGauge.ResetGauge(); // ゲージ非表示＆HP最大に戻す
+        }
+    }
 
 }

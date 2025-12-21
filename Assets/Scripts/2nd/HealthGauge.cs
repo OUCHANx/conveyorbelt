@@ -11,6 +11,9 @@ public class HealthGauge : MonoBehaviour
     public float currentRate = 1.0f;
 
     public bool isGaugeActive;
+    private bool hasDepleted;
+
+    public System.Action OnGaugeEmpty;
 
     private void Start()
     {
@@ -21,6 +24,7 @@ public class HealthGauge : MonoBehaviour
     public void ShowGauge(float targetRate)
     {
         isGaugeActive = true;
+        hasDepleted = false;
         if (healthImage != null) healthImage.enabled = true;
         if (burnImage != null) burnImage.enabled = true;
         SetGauge(targetRate);
@@ -33,6 +37,13 @@ public class HealthGauge : MonoBehaviour
         if (burnImage != null) burnImage.enabled = false;
     }
 
+    public void ResetGauge()
+    {
+        currentRate = 1.0f;
+        hasDepleted = false;
+        HideGauge();
+    }
+
     public void SetGauge(float targetRate)
     {
         currentRate = Mathf.Clamp01(targetRate);
@@ -40,7 +51,7 @@ public class HealthGauge : MonoBehaviour
 
         healthImage.DOFillAmount(currentRate, duration).OnComplete(() =>
         {
-            burnImage.DOFillAmount(currentRate, duration * 0.5f).SetDelay(0.2f);
+            burnImage.DOFillAmount(currentRate, duration * 0.5f).SetDelay(0.2f).OnComplete(CheckDepleted);
         });
     }
 
@@ -48,6 +59,16 @@ public class HealthGauge : MonoBehaviour
     {
         if (!isGaugeActive) return;
         SetGauge(currentRate - rate);
+    }
+
+    private void CheckDepleted()
+    {
+        if (hasDepleted) return;
+        if (currentRate <= 0f)
+        {
+            hasDepleted = true;
+            OnGaugeEmpty?.Invoke();
+        }
     }
 
     private void Update()
