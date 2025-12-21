@@ -1,7 +1,9 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections.Generic;
+
 public class secondPanSpawner : MonoBehaviour
 {
     [Header("経路設定")]
@@ -21,6 +23,9 @@ public class secondPanSpawner : MonoBehaviour
     [SerializeField] public secondSimpleLineMover mover;  // ← SimpleLineMoverを参照しておく
     // private Coroutine spawnRoutine;
     [SerializeField] private Transform pastryBoard;
+    [SerializeField] private HealthGauge healthGauge;
+    [SerializeField] private Image healthImage;
+    [SerializeField] private Image burnImage;
     private List<GameObject> spawnedPans = new List<GameObject>(); // 生成済みパンを管理
 
     void Start()
@@ -168,6 +173,9 @@ public class secondPanSpawner : MonoBehaviour
 
         Vector3 center = pastryBoard.position;
         StartCoroutine(MoveToPosition(lastPan, center, 1f)); // 1秒で移動
+            healthGauge.isGaugeActive = true;
+            if (healthImage != null) healthImage.enabled = true;
+        if (burnImage != null) burnImage.enabled = true;
     }
 }
 
@@ -185,6 +193,7 @@ IEnumerator MoveToPosition(GameObject obj, Vector3 target, float duration)
     }
 
     obj.transform.position = target; // 最終位置を保証
+    healthGauge.isGaugeActive = true;
 }
 
 }
