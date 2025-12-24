@@ -3,7 +3,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
-
 public class secondPanSpawner : MonoBehaviour
 {
     [Header("経路設定")]
@@ -26,6 +25,7 @@ public class secondPanSpawner : MonoBehaviour
     [SerializeField] private HealthGauge healthGauge;
     [SerializeField] private Image healthImage;
     [SerializeField] private Image burnImage;
+
     private List<GameObject> spawnedPans = new List<GameObject>(); // 生成済みパンを管理
     private GameObject pastryBoardPan;
 
@@ -130,8 +130,8 @@ public class secondPanSpawner : MonoBehaviour
 
             if (healthGauge != null)
             {
-                healthGauge.OnGaugeEmpty -= HandleGaugeEmpty;
-                healthGauge.OnGaugeEmpty += HandleGaugeEmpty;
+                healthGauge.OnGaugeEmpty.RemoveListener(HandleGaugeEmpty);
+                healthGauge.OnGaugeEmpty.AddListener(HandleGaugeEmpty);
                 healthGauge.ShowGauge(1f); // 次のパン用に満タンで開始
             }
         }
