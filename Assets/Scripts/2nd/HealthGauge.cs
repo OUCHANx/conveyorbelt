@@ -1,6 +1,7 @@
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class HealthGauge : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class HealthGauge : MonoBehaviour
     public bool isGaugeActive;
     private bool hasDepleted;
 
-    public System.Action OnGaugeEmpty;
+    public UnityEvent OnGaugeEmpty;
 
     private void Start()
     {
