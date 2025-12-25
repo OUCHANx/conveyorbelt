@@ -2675,6 +2675,9 @@ MonoBehaviour:
   debugDamageRate: 0.1
   currentRate: 1
   isGaugeActive: 0
+  OnGaugeEmpty:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!222 &1561434525
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2835,7 +2838,7 @@ GameObject:
   - component: {fileID: 1793160556}
   - component: {fileID: 1793160555}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: CoinManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
