@@ -168,7 +168,7 @@ public class secondPanSpawner : MonoBehaviour
         }
 
         //コインを増やす処理
-        //CoinManager.Instance.AddCoins(10); // 例: 10コイン増やす
+        CoinManager.AddCoins(1); // 例: 10コイン増やす
     }
 
 }
