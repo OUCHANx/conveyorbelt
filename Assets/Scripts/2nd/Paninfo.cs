@@ -15,7 +15,7 @@ public class CoinManager : MonoBehaviour
     {
         if (coinText != null)
         {
-            coinText.text = "Coins: " + coins.ToString();
+            coinText.text =coins.ToString();
         }
     }
     public static void AddCoins(int amount)

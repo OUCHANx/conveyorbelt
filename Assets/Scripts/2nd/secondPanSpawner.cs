@@ -93,7 +93,6 @@ public class secondPanSpawner : MonoBehaviour
         }
         SpawnOne();
     }
-
     public void deletePan()
     {
         if (spawnedPans.Count > 0)
