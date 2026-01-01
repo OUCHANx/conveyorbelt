@@ -9,3 +9,4 @@ using UnityEngine;
 //5.パンがpastryBoardに追加された時に音を鳴らす
 //6.pastryboardのパンがいっぱいになったら警告を出す
 //7.pastryboardをクリックした時のエフェクトを追加する→dotween
+//8.クリックしたときに周りに「−１」みたいなテキストを出す
